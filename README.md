@@ -51,10 +51,10 @@
 
 This Git Repo containes an Image Classifying Project which can classify images from 10 different classes with an accuracy of over 98.8%.
 
-This project includes a classifier built on RESNET50 and a classifier, built from scratch, which classifies images with an accuracy of over 76%
+This project includes a classifier built on RESNET50 and a classifier, built from scratch, which classifies images with an accuracy of over 76%<br>
 <img src="images/retrainedResnet50.png" alt="Logo" width="350" height="350">
 <img src="images/CustomNN.png" alt="Logo" width="350" height="350">
-[RESNET50](https://arxiv.org/pdf/1512.03385v1.pdf)
+<br>[RESNET50](https://arxiv.org/pdf/1512.03385v1.pdf)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -89,13 +89,55 @@ For example, this is how you would list them:
 
 Included in the Notebook are 2 functions, which create image classifier models: 
 - build_retrained_model
+
+  With following parameters used:
+  ```
+    batch_size = 32
+    img_height = 224
+    img_width = 224
+    data_dir = 'KerasPrep'
+    validation_split = 0.2
+    random_rotation = 0.35
+    random_zoom = 0.35
+    dropout = 0.24
+    epochs=10
+    base_learning_rate = 0.0001
+  ```
 - build_custom_model
 
+  With following parameters used:
+  ```
+    batch_size = 32
+    img_height = 300
+    img_width = 300
+    data_dir = 'KerasPrep'
+    validation_split = 0.2
+    random_rotation = 0.35
+    random_zoom = 0.35
+    dropout = 0.3
+    dropout2 = 0.31
+    start_neurons = 128
+    number_of_layers = 2
+    batch_normalization = False
+    epochs=230
+  ```
+
+Also included in the notebook are cells which are an example for how to use the model for precidicting the class.
+
+```
+img_array = tf.keras.utils.img_to_array(img)
+img_array = tf.expand_dims(img_array, 0) # Create a batch
+
+predictions = model.predict(img_array)
+score = tf.nn.softmax(predictions[0])
+
+print(
+    "This image most likely belongs to {} with a {:.2f} percent confidence."
+    .format(class_labels[np.argmax(score)], 100 * np.max(score))
+)
+```
 
 
-Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
