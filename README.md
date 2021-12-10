@@ -51,7 +51,7 @@
 
 This Git Repo containes an Image Classifying Project which can classify images from 10 different classes with an accuracy of over 98.8%.
 
-This project includes a classifier built on RESNET50 and a classifier, built from scratch, which classifies images with an accuracy of over 76%<br>
+This project includes a classifier built on [RESNET50](https://arxiv.org/pdf/1512.03385v1.pdf) and a classifier, built from scratch, which classifies images with an accuracy of over 76%<br>
 <figure>
     <img src="images/retrainedResnet50.png" alt="ResNet50" width="350" height="350">
     <figcaption>Figure above shows retrained RESNET50 Accuracy</figcaption>
@@ -59,8 +59,10 @@ This project includes a classifier built on RESNET50 and a classifier, built fro
   <figcaption>Figure above shows Custom Neural Network accuracy</figcaption>
 </figure>
 
+The retrained ResNet50 features data augmentation techniques, and condenses the layers at the end to the number of classes it is trained for. The training first is in bigger steps and then for fine tuning the learning rate is 1/10 of the original learning rate. It then also begins tuning the top 100 layers of the ResNet50.
 
-<br>[RESNET50](https://arxiv.org/pdf/1512.03385v1.pdf)
+The custom Neural network uses a series of data augmentation techniques, pooling layers, 2 Convolution Layers and condenses the model at the end to the number of classes. It also features multiple Dropouts between the layers to prevent overfitting.
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -128,7 +130,7 @@ Included in the Notebook are 2 functions, which create image classifier models:
     epochs=230
   ```
 
-Also included in the notebook are cells which are an example for how to use the model for precidicting the class.
+Also included in the notebook are cells, which are an example for how to use the model for precidicting the class.
 
 ```
 img_array = tf.keras.utils.img_to_array(img)
