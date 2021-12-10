@@ -49,16 +49,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This Git is an Image Classifying Project which can classify images from 10 different classes with an accuracy of over 98.8%.
+This Git Repo containes an Image Classifying Project which can classify images from 10 different classes with an accuracy of over 98.8%.
 
 This project includes a classifier built on RESNET50 and a classifier, built from scratch, which classifies images with an accuracy of over 76%
-
+<img src="images/retrainedResnet50.png" alt="Logo" width="350" height="350">
+<img src="images/CustomNN.png" alt="Logo" width="350" height="350">
 [RESNET50](https://arxiv.org/pdf/1512.03385v1.pdf)
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-In this section you should provide instructions on how to use this repository to recreate your project locally.
 
 ### Dependencies
 
@@ -88,7 +87,11 @@ For example, this is how you would list them:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. For course projects, include which file to execute and the format of any input variables.
+Included in the Notebook are 2 functions, which create image classifier models: 
+- build_retrained_model
+- build_custom_model
+
+
 
 Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
