@@ -177,6 +177,12 @@ Michael Baumgärtner - [@space_mib](https://twitter.com/space_mib) - mbaumgartne
 
 Github Link: [https://github.com/Granluke](https://github.com/Granluke)
 
+Ignacio Gómez - igomezfernandez@ufl.edu
+
+Hugo Chapado - hugochapado@ufl.edu
+
+Gonzalo Prats - g.prats@ufl.edu
+
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
