@@ -52,8 +52,14 @@
 This Git Repo containes an Image Classifying Project which can classify images from 10 different classes with an accuracy of over 98.8%.
 
 This project includes a classifier built on RESNET50 and a classifier, built from scratch, which classifies images with an accuracy of over 76%<br>
-<img src="images/retrainedResnet50.png" alt="Logo" width="350" height="350">
-<img src="images/CustomNN.png" alt="Logo" width="350" height="350">
+<figure>
+    <img src="images/retrainedResnet50.png" alt="ResNet50" width="350" height="350">
+    <figcaption>Figure above shows retrained RESNET50 Accuracy</figcaption>
+  <img src="images/CustomNN.png" alt="Logo" width="350" height="350">
+  <figcaption>Figure above shows Custom Neural Network accuracy</figcaption>
+</figure>
+
+
 <br>[RESNET50](https://arxiv.org/pdf/1512.03385v1.pdf)
 
 <!-- GETTING STARTED -->
