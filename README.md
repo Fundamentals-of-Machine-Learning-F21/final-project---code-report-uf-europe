@@ -1,23 +1,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/catiaspsilva/README-template">
-    <img src="images/gators.jpg" alt="Logo" width="150" height="150">
+  <a href="https://github.com/Fundamentals-of-Machine-Learning-F21/final-project---code-report-uf-europe">
+    <img src="images/uf_europe_logo.png" alt="Logo" width="150" height="150">
   </a>
 
-  <h3 align="center">README Template</h3>
+  <h3 align="center">UF Europe Final Project</h3>
 
   <p align="center">
-    A README template to jumpstart your projects!
+    The README to the Image Classifying Project
     <br />
-    <a href="https://github.com/catiaspsilva/README-template/blob/main/images/docs.txt"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Fundamentals-of-Machine-Learning-F21/final-project---code-report-uf-europe/Report UF Europe.doc"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#usage">View Demo</a>
+    <a href="https://github.com/Fundamentals-of-Machine-Learning-F21/final-project---code-report-uf-europe/issues">Report Bug</a>
     ·
-    <a href="https://github.com/catiaspsilva/README-template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/catiaspsilva/README-template/issues">Request Feature</a>
+    <a href="https://github.com/Fundamentals-of-Machine-Learning-F21/final-project---code-report-uf-europe/issues">Request Feature</a>
   </p>
 </p>
 
@@ -29,9 +27,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -54,11 +49,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-In this section you should describe your project, including any datasets you used and appropriate citations. You may refer to your project report or cite your paper for more detailed information.
+This Git is an Image Classifying Project which can classify images from 10 different classes with an accuracy of over 98.8%.
 
-[Here goes the title with hyperlink](https://github.com/catiaspsilva/README-template)
+This project includes a classifier built on RESNET50 and a classifier, built from scratch, which classifies images with an accuracy of over 76%
 
-You can include tables or images to summarize your results when and if appropriate.
+[RESNET50](https://arxiv.org/pdf/1512.03385v1.pdf)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -70,38 +65,25 @@ In this section you should provide instructions on how to use this repository to
 Here, list all libraries, packages and other dependencies that need to be installed to run your project. Include library versions and how they should be installed if a special requirement is needed.
 
 For example, this is how you would list them:
-* Transformers 4.8.0
+* Numpy 1.21.4
   ```sh
-  conda install -c conda-forge transformers
+  conda install -c conda-forge numpy
   ```
-* OpenCV 4.5.2
+* Tensorflow 2.6.0
   ```sh
-  conda install -c conda-forge opencv
+  conda install -c conda-forge tensorflow
   ```
-### Alternative: Export your Environment
-
-Alternatively, you can export your Python working environment, push it to your project's repository and allow users to clone it locally. This way, anyone can install it and they will have all dependencies needed. Here is how you export a copy of your Python environment:
-
+* Matplotlib 3.5.0
   ```sh
-  conda env export > requirements.yml
-  ```
-
-The user will be able to recreate it using:
-
-  ```sh
-  conda env create -f requirements.yml
+  conda install -c conda-forge matplotlib
   ```
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/catiaspsilva/README-template.git
+   git clone https://github.com/Fundamentals-of-Machine-Learning-F21/final-project---code-report-uf-europe
    ```
-2. Setup (and activate) your environment
-  ```sh
-  conda env create -f requirements.yml
-  ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -115,7 +97,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/catiaspsilva/README-template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Fundamentals-of-Machine-Learning-F21/final-project---code-report-uf-europe/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -138,9 +120,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- Authors -->
 ## Authors
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Michael Baumgärtner - [@space_mib](https://twitter.com/space_mib) - mbaumgartner@ufl.edu
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Github Link: [https://github.com/Granluke](https://github.com/Granluke)
 
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -157,5 +139,3 @@ You can acknowledge any individual, group, institution or service.
 * [Slick Carousel](https://kenwheeler.github.io/slick)
 
 ## Thank you
-
-If this is useful: [![Buy me a coffee](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg)](https://www.buymeacoffee.com/catiaspsilva)
